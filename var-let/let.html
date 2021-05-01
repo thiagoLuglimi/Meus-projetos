@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Var e let</title>
+</head>
+<body>
+    <!-- O let serve para preservar, se eu usar let dentro do bloco ele vai funcionar, -->
+    <script>
+        if(true){
+            let serie = "thgostoso"
+            //console.log(serie) caso o console fique fora do bloco ele da erro
+
+        }
+        console.log(serie)
+
+
+    </script>
+
+    <script>
+        const SERIE = 'TH'
+
+        Function x(){
+            const SERIE = 'd2'
+            console.log('dentro da funcao:' + SERIE)
+
+        }
+        X()
+        CONSOLE.LOG('escopo global':+ SERIE)
+
+        //a const faz pratiacemnte o mesma coisa que o let
+
+        let quadrado = x => x*x 
+        document.write(quadrado(3))
+        // function arrow 
+    </script>
+</body>
+</html>

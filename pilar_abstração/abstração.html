@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilar de abstração</title>
+</head>
+<body>
+    <h1>Pilar de abstração</h1>
+    <script>
+        // o class é usado como modelo de objeto, abstração deve conter caracteristicas e ações
+        class ContaBancaria{
+            //agencia 
+            //NumeroConta
+            //saldo
+            //limite
+            // o constructor os define os atributos ou caracteristicas 
+
+            constructor(){
+                this.agencia = 1008
+                this.NumeroConta = 10082000
+                this.saldo = 100
+                this.limite = 1500
+
+            }
+
+            // em seguida utilizaremos as ações elas funcionam com mesma sitaxe de função, porém sem o function
+            depositar(valordeposito){
+                this.saldo += valordeposito
+            }
+
+            sacar(valorsaque){
+                this.saldo-=valorsaque
+            }
+
+            ConsultarSaldo(){
+                return this.saldo
+            }
+        }
+        let x = new ContaBancaria()
+        let y = new ContaBancaria()
+
+        document.write(x.ConsultarSaldo())
+        x.sacar(40) 
+        document.write(x.ConsultarSaldo())
+        x.depositar(1000)
+        document.write(x.ConsultarSaldo())
+        
+
+    </script>
+    <hr>
+    
+
+</body>
+</html>
