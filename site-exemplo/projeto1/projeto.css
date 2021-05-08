@@ -1,4 +1,4 @@
-h1{
+/*h1{
     color: green;
 }
 main{
@@ -59,4 +59,15 @@ button{
 
 #RES{
     background-color: turquoise;
+} */
+
+header main{
+    display: flex;
+    align-items: center;
+
+    
+}
+
+button {
+    width: 80px;
 }

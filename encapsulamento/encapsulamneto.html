@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>encapasulamento</title>
+</head>
+<body>
+    <!--<script>
+        class Tv{
+            constructor(){
+                this._relacaoCanais = Array(8, 7, 10)
+                this._canalAtivo= 5
+                this._volume= 5
+            }
+
+            // metodo get recupera o atributo do objeto e set atualiza ele renomeia valor atributo
+            get canalAtivo(){
+                return this._canalAtivo
+            }
+            set canalAtivo(canal){
+                let x = this._relacaoCanais.indexOf(canal)
+                console.log(x)
+                this._canalAtivo = canal
+            }
+        }
+
+        let tv = new Tv()
+        tv._canalAtivo = 3
+        console.log(tv.canalAtivo)
+        
+    </script>-->
+   <!-- <script>
+        class pessoa{
+            #nome
+            #idade
+            constructor(nome, idade){
+                this.#nome = nome
+                this.#idade = idade
+            }
+
+            get nome(){
+                return this.#nome
+            }
+
+            get idade(){
+                return this.#idade
+            }
+
+            set nome (nome){
+                this.#nome = nome
+            }
+
+            set idade(idade){
+                return this.#idade = idade
+            }
+
+            acao(){
+                return `O meu é nome ${this.#nome} e minha idade${this.#idade}`
+            }
+
+
+        }
+
+        let Acao = new pessoa('th', 21)
+        Acao.nome = 'THIAGO'
+        Acao.idade ='22'
+        console.log(Acao.nome)
+        console.log(Acao.acao())
+        
+    </script>-->
+
+    <script>
+        class Sofa{
+            #traveseiro
+            #lugar
+            constructor(traveseiro, lugar){
+                this.#traveseiro=traveseiro
+                this.#lugar=lugar
+
+            }
+
+            get Traveseiro(){
+                return this.#traveseiro
+            }
+
+            get Lugar (){
+                return this.#lugar
+            }
+
+
+            set trave (traveseiro){
+                this.#traveseiro=traveseiro
+            }
+
+
+
+            Acaotraveseiro(){
+                return `Meu sofa tem ${this.#lugar} e ${this.#traveseiro} traveseiros`
+            }
+        }
+
+        let acaoSofa = new Sofa(5, '5 Lugares')
+        acaoSofa.trave= 7 // set para atualizar 
+
+            console.log(acaoSofa.Traveseiro)
+            console.log(acaoSofa.lugar)
+            console.log(acaoSofa.Acaotraveseiro())
+            
+
+        
+    </script>
+
+    <script>
+        class Mesa{
+            #pratos
+            #copos
+            #lencos
+            constructor(pratos, copos, lencos){
+                this.#pratos=pratos
+                this.#copos=copos
+                this.#lencos=lencos
+            }
+
+            get Pratos (){
+                return this.#pratos
+            }
+
+            set prt(prato){
+                this.#pratos=prato
+            }
+
+            mesinha(){
+                return `Em minha mesa eu quero ${this.#pratos} pratos, quero ${this.#copos} copos e tbm ${this.#lencos} guardanapos`
+            }
+        }
+
+        let acaomesa = new Mesa(10,7,20)
+        acaomesa.prt= 30 // metodo set atualizei de 10 para 30
+        console.log(acaomesa.Pratos)
+        console.log(acaomesa.mesinha())
+        
+
+    </script>
+
+    <script>
+        class bonde{
+            #lugares
+            #pessoas
+            constructor(lugares, pessoas){
+                this.#lugares=lugares
+                this.#pessoas=pessoas
+            }
+
+            get Onibus (){
+                return this.#lugares
+            }
+
+            get Psoas (){
+                return this.#pessoas
+            }
+
+            set max (maximo){
+                this.#lugares=maximo
+            }
+            Quantidade(){
+                return `Devido ao decreto o onibus tem apenas ${this.#lugares} então só pode ${this.#pessoas} sendo 10 em pé`
+            }
+        }
+        let result = new bonde('50 lugares', '60 pessoas')
+        result.max = '70 lugares' // set atualizei de 50 para 70
+
+        console.log(result.Onibus)
+        console.log(result.Psoas)
+        console.log(result.Quantidade())
+       
+
+    </script>
+</body>
+</html>

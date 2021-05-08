@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pilar de abstração e reflexão</title>
+</head>
+<body>
+    <script>
+       /* class Cadeira{
+            constructor (quantidade, giratoria,cor) {
+                this.quantidade=quantidade
+                this.giratoria=giratoria
+                this.cor=cor
+            }
+            girarCadeira() {
+                if(this.giratoria === true){
+                    console.log('girou')
+                }else{
+                    console.log('cadeira não é giratória')
+                }
+            }
+        }
+        let cadeira = new Cadeira(4,false,'vermelho')
+        console.log(cadeira)
+        cadeira.girarCadeira()*/
+
+    </script>
+<!--
+    <script>
+        class cadeiraCor{
+            constructor(qtq,giratoria,cor) {
+                this.qtq=qtq
+                this.giratoria=giratoria
+                this.cor=cor
+            }
+            corred(){
+                if(this.cor === true){
+                    console.log('a cor é falsa')
+                }else{
+                    console.log(' a cor é verdadeira')
+                }
+            }
+        }
+        let cad = new cadeiraCor(1,'sim',false)
+        cad.corred()/*
+    </script>-->
+
+    <script>
+        class cadeira{
+            constructor(quantidade,gira,cor) {
+                this.qtq=quantidade
+                this.giratoria=gira
+                this.cor=cor
+
+            }
+            Quant(){
+                if (this.qtq === 4) {
+                    console.log(' a quantidade de pernas está certa!')
+                    
+                }else {
+                    console.log('quantidade errada ')
+                }
+            }
+        }
+
+      let cadeiras = Array()
+      cadeiras.push(new cadeira(4,'não',false))
+      cadeiras.push(new cadeira(1,'sim',true))
+      console.log(cadeiras)
+
+        
+    </script>
+    
+</body>
+</html>
