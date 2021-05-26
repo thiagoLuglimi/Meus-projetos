@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objetos literais</title>
+</head>
+<body>
+    <!--<script>
+        class produto{
+            constructor(descrição, preço){
+                this.descrição=descrição
+                this.preço=preço
+            }
+
+            preçoDescricao(){
+                console.log(`o ${this.descrição} está custando ${this.preço}`)
+            }
+        }
+
+        let resultado = new produto('notebook', 2000)
+        resultado.preçoDescricao()
+
+        // agora vamos fazer o metodo literal o de cima foi o de classe 
+        
+        produtoLiteral = {
+            descrição: 'carro',
+            preço: 30000,
+            verpreco:function(){
+                console.log(`o preço do ${this.descrição} é ${this.preço}`)
+            }
+        }
+        
+    
+        produtoLiteral.verpreco()
+
+        
+
+    </script>]-->
+
+    <script>
+        //***************************************** melhorias no objeto literal
+        let nome =  'th'
+        let idade = 20
+        let sexo = 'masculino'
+        let profissao = 'programador'
+
+      /*  let objeto = {
+            nome: nome,
+            idade: idade,
+            sexo: sexo,
+            profissao: profissao,
+            exeibirResumo: function(){
+                console.log(`${this.nome}, ${this.idade}, ${this.sexo}, ${this.profissao}`)
+            }
+        } */
+
+        let objeto2 ={
+            nome,
+            idade,
+            sexo,
+            profissao,
+            exibir(){
+                console.log(`${this.nome}, ${this.idade}, ${this.sexo}, ${this.profissao}`)
+            }
+        }
+
+       /* console.log(objeto)
+        objeto.exeibirResumo()*/
+
+        console.log(objeto2)
+        objeto2.exibir()
+
+        // objetos literais podem motificar atributos e exemplo
+
+        let pessoa = {
+            nome: 'd2',
+            idade: 19,
+            
+        }
+
+        console.log(pessoa.nome)
+        console.log(pessoa.idade)
+
+        // alterando
+        pessoa.nome = 'th',
+        pessoa.idade = 20,
+        console.log(pessoa.nome)
+        console.log(pessoa.idade)
+
+        // criação dinamica com objetos literais
+
+        let humano = {
+            nome: 'se fudeu',
+            idade: 40,
+        }
+
+        console.log(humano)
+        
+        humano.sexo = 'feminino' // adicionei mais um objeto
+        console.log(humano)
+
+        pessoa.dizOi = ()=> console.log('Oi é o cralho') // funcao arrow
+        pessoa.dizOi()
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fgts.css">
+    <script src="fgts.js"></script>
+    <title>fgts</title>
+</head>
+<body>
+    <h1> SISTEMA CÁLCULAR FGTS</h1>
+    <div class="container">
+        <div class="fgts">
+           
+            <Label>DIGITE SEU NOME:</Label>
+            <input type="text" class="#" name="Nome" >
+        
+            <label>DIGITE SEU SALÁRIO BRUTO:</label>
+            <input type="number" class="#" id="salario"> 
+           
+            <label>DIGITE 8%, CASO SEJA JOVEM APRENDIZ, DIGITE 2%:</label>
+            <input type="number" class="#" id="jovem">
+           
+            <div class="bt" id="resultado"></div>
+            <button type="button" onclick="ver()">Calcular</button>
+        </div>
+        <hr>
+     
+        <div class="fgtsTotal">
+
+            <label">DEPOSITO MENSAL:</label>
+            <input type="number" class="#" id="mensal">
+
+            <label>MESES CONTRIBUIDOS:</label>
+            <input type="number" class="#" id="contribuicao">
+
+            <div id="resTotal"></div>
+            <button type="button" onclick="Tot()">Calcular Total</button>
+
+
+        </div>
+
+    </div>
+</body>
+</html>

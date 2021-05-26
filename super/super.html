@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>super</title>
+</head>
+<body>
+    <!-- O elemento super acessar  construtor dos elemntos pai, apenas elemntos filho pode ter super -->
+    <script>
+        class empresa {
+            constructor(porta, janela){
+                this.porta = porta
+                this.janela = janela
+                this.pessoas = 20
+            }
+
+            abrir(){
+                console.log('abrir')
+            }
+
+            fechar(){
+                console.log('fechar')
+            }
+        }
+
+        class salaContabil extends empresa {
+            constructor(){
+                super()
+                //this.porta = 'verde'
+                //this.janela = 'pequena'
+                this.sistema = 'ssw'
+            }
+          /*  abrir(){
+                console.log('abrir')
+            }
+
+            fechar(){
+                console.log('fechar')
+            } */
+
+            lancarNf(){
+                console.log('lançar notas')
+            }
+        }
+
+        class salafinanceiro extends empresa {
+            constructor(porta, janela){
+                super(porta, janela)
+               // this.porta = 'azul'
+               // this.janela = 'janelão'
+                this.banco = 'itau'
+            }
+
+           /* abrir(){
+                console.log('abrir')
+            }
+
+            fechar(){
+                console.log('fechar')
+            }*/
+
+            pagar(){
+                console.log('pagar contas')
+            }
+            
+        }
+
+        let Empresa = new empresa()
+        let contabil = new salaContabil()
+
+        let financeiro = new salafinanceiro('vermelho', 'janelão')
+        let financeiro2 = new salafinanceiro('azul', 'janelinha')
+
+
+    
+        console.log(financeiro)
+        console.log(financeiro2)
+        
+    </script>
+    
+</body>
+</html>

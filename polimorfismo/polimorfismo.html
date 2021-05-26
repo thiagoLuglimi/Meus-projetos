@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>polimorfismo</title>
+</head>
+<body>
+    <script>
+        class passaro {
+            constructor(bico,cor){
+                this.bico= bico
+                this.cor = cor
+            }
+            voar(){
+                console.log('voar')
+            }
+
+            Bico(){
+                console.log('bico grande')
+            }
+        }
+
+        class papagaio extends passaro{
+            constructor(bico,cor){
+                super(bico,cor)
+
+            }
+
+        }
+
+        class avestruz extends passaro {
+            constructor(bico,cor){
+                super(bico,cor)
+                this.altura = '3 metros'
+            }
+
+            // polimosfismo e sobre por a classe, tipo avestruz não voa, porém ele é classe filha de passaro, então para resolver 
+            // usamos polimorfismo, que no caso seria refazer a classe voar() 
+            voar(){
+                console.log('não voa')
+            }
+
+        }
+
+        let ave = new avestruz('pequena', 'amarela')
+        console.log(ave)
+        ave.voar()
+
+        let papa = new papagaio('grande','verde')
+        console.log(papa)
+        papa.voar()
+
+
+       
+    </script>
+
+
+</body>
+</html>

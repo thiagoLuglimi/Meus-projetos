@@ -7,7 +7,7 @@
     <title>Herança</title>
 </head>
 <body>
-    <script>
+   <!-- <script>
 
         class Animal {
             constructor(){
@@ -80,6 +80,53 @@
 
 
         
+    </script> -->
+
+    <script>
+        class transporte{
+            constructor(){
+                this.roda='preta'
+                this.velocidade=100
+            }
+            correr(){
+                console.log('corre 100km')
+            }
+        }
+
+        class bonde extends transporte {
+            constructor(){
+                super()
+                //this.roda= 'preta'
+                //this.velocidade= 100
+                this.lugar=20
+            }
+            //correr(){
+                //console.log('corre 100km')
+            //}
+            estaciona(){
+                console.log('após fazer sinal')
+            }
+        }
+
+        class carro extends transporte{
+            constructor(){
+                super()
+                //this.roda='cromada'
+               // this.velocidade=160
+                this.pessoas=4
+            }
+            /*correr(){
+                console.log('corre 160km')
+            }*/
+
+        }
+
+        let Bonde = new bonde()
+        let Carro = new carro()
+
+        console.log(Bonde)
+        console.log(Carro)
+        Bonde.correr()
     </script>
 </body>
 </html>

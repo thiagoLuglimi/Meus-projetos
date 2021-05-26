@@ -1,0 +1,90 @@
+body{
+    background-color: #F6F8E1;
+}
+
+h1{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: rgb(172, 71, 255);
+    color: #fff;
+    width: 100%;
+    height: 100px;
+    font-size: 40px;
+}
+
+input{
+    height: 20px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10 black;
+}
+.container{
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.fgtsTotal{
+    margin-top: 50px;
+    font-size: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    
+
+}
+
+.fgts{
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    
+
+
+}
+
+.bt{
+    background-color: rgb(172, 71, 255);
+    width: 305px;
+    height: 60px;
+    border-radius: 10px;
+    color: #fff;
+    
+}
+#resTotal{
+    width: 305px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: rgb(172, 71, 255);
+    margin-left: 370px;
+    box-shadow: 0 0 30 black;
+    color: #fff
+
+        
+}
+
+button{
+    width: 160px;
+    font-size: 20px;
+    margin-top: 5px;
+    background-color: rgb(110, 25, 96);
+    color: #fff;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: rgb(146, 124, 163);
+}
