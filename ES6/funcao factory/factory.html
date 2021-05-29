@@ -7,6 +7,50 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+        // exemplo com objeto literal
+        let bicicleta1 = {
+            cor: 'vermelho',
+            aro: 20,
+            marcha: 'unica',
+            acelelar(){
+                console.log('metodo pedalar')
+            }
+        }
+
+        let bicicleta2 = {
+            cor: 'azul',
+            aro: 24,
+            marcha: 'sem marcha',
+            acelelar(){
+                console.log('sem marcha fio')
+            }
+        }
+       // utilizando função factory, economizei codigo 
+
+       let FuncaoFactory =  function(cor, aro, marcha){     
+            return {
+                cor,
+                aro,
+                marcha,
+                acelerar(){
+                    console.log('mete o loko mano')
+                }
+            }
+       }
+
+        console.log(bicicleta1)
+        console.log(bicicleta2)
+        bicicleta2.acelelar()
+
+        // factory
+
+        let factory = FuncaoFactory('preto', 12, 'sem marcha');
+        console.log(factory)
+
+        let factory2 = FuncaoFactory('amarelo', 23, 'marcha')
+        console.log(factory2)
+        
+    </script>
 </body>
 </html>
